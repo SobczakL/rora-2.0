@@ -9,58 +9,50 @@ export default {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                lato: "lato",
+                latoSB: "latoSB"
+            },
             screens: {
                 sm: "425px",
                 md: "768px",
                 lg: "1100px",
             },
             colors: {
-                background: '#020617',
-                foreground: '#0f172a',
-                card: {
-                    DEFAULT: 'hsl(var(--card))',
-                    foreground: 'hsl(var(--card-foreground))'
-                },
-                popover: {
-                    DEFAULT: 'hsl(var(--popover))',
-                    foreground: 'hsl(var(--popover-foreground))'
-                },
-                primary: {
-                    DEFAULT: 'hsl(var(--primary))',
-                    foreground: 'hsl(var(--primary-foreground))'
-                },
-                secondary: {
-                    DEFAULT: 'hsl(var(--secondary))',
-                    foreground: 'hsl(var(--secondary-foreground))'
-                },
-                muted: {
-                    DEFAULT: 'hsl(var(--muted))',
-                    foreground: 'hsl(var(--muted-foreground))'
-                },
-                accent: {
-                    DEFAULT: 'hsl(var(--accent))',
-                    foreground: 'hsl(var(--accent-foreground))'
-                },
-                destructive: {
-                    DEFAULT: 'hsl(var(--destructive))',
-                    foreground: 'hsl(var(--destructive-foreground))'
-                },
-                border: 'hsl(var(--border))',
-                input: 'hsl(var(--input))',
-                ring: 'hsl(var(--ring))',
-                chart: {
-                    '1': 'hsl(var(--chart-1))',
-                    '2': 'hsl(var(--chart-2))',
-                    '3': 'hsl(var(--chart-3))',
-                    '4': 'hsl(var(--chart-4))',
-                    '5': 'hsl(var(--chart-5))'
-                }
+                backgroundD: '#020617',
+                backgroundM: '#0F172A',
+                backgroundL: '#1E293B',
+                accent: '#F3A400',
+                input: '#94A3B8',
+                buttonLogin: '#334155',
+                buttonPrimary: '#64748B',
+                buttonSecondary: '#020617',
+                cardPrimary: '#334155',
+                cardSecondary: '#2A2A40',
+                slate: '#D8DCE4'
             },
             borderRadius: {
-                lg: 'var(--radius)',
-                md: 'calc(var(--radius) - 2px)',
-                sm: 'calc(var(--radius) - 4px)'
-            }
+                lg: '50px',
+                md: '25px',
+                sm: '15px'
+            },
+            fontSize: {
+                bodyS: '14px',
+                bodyM: '16px',
+                bodyL: '18px',
+                headerS: '26px',
+                headerM: '32px',
+                headerL: '34px',
+                cardHeaderS: '20px',
+                cardHeaderM: '22px',
+                cardHeaderL: '24px',
+                subheaderS: '26px',
+                subheaderM: '28px',
+                subheaderL: '30px',
+                timeS: '11px',
+                timeM: '13px',
+                timeL: '15px'
+            },
         }
     },
     plugins: [require("tailwindcss-animate")],
